@@ -1,11 +1,14 @@
 version: '3.8'
 services: 
-    portoCommerce:
-        image: portocommerce
+    cypress:
+        image: cypress-test
         build: 
             context: .
             dockerfile: ./Dockerfile
         volumes:
-           -  ./dockerReports:/app/mochawesome-report/
+            - ./cypress:${ROOT}/cypress
+        environment:
+            - ROOT=/cypress-test
+        working_dir: ${ROOT}
         command: ["npm", "test"]
     

@@ -7,7 +7,7 @@ module.exports = defineConfig({
   reporterOptions: {
     reporterEnabled: ['@reportportal/agent-js-cypress', 'mochawesome'],
     reportportalAgentJsCypressReporterOptions: {
-    endpoint: 'http://localhost:8080/api/v1',
+    endpoint: '',
     apiKey: 'ui-cypress_vre_4XYBR1GtYM5ku957prWKRyE2vwrLzJg1AUnoOQiO7AL4uTgCcSQspjtsntJl',
     launch: 'ui-automation-cypress',
     project: 'ui-automation-cypress',

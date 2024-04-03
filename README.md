@@ -26,13 +26,10 @@ cypress/
 │   ├── verifyWorkflow.js
 └── screenshots/
 └── videos/
-
 ```
 
 Here, I encapsulated complex interactions and verifications within the page objects. 
 this ensures code reusability and maintains a clear separation of concerns.
-
-
 
 To install the dependencies on your pc:
 

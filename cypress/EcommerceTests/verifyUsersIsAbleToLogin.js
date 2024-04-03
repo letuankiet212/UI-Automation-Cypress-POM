@@ -1,5 +1,4 @@
 import HomePage from "../support/wiring/HomePage/HomePageFunctions"
-import ProductPage from "../support/wiring/ProductPage/ProductPageFunctions"
 import ReusableMethods from "../support/wiring/Reusables/ReusableMethod"
 
 const homePage = new HomePage()
@@ -14,7 +13,7 @@ describe("E-Shopping Funtionality",()=>{
     })
 
     it("login Validation",()=>{  
-        cy.testCase("Login", "Validate user is able to login correctly")
+        cy.testCase("Login", "Validate user is able to login correctly s")
     homePage.setName(name)
             .setGenderBox(genderArray[Math.floor(Math.random()*2)])
             .assertTwoWayDataBindings(name)
